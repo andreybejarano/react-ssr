@@ -1,0 +1,7 @@
+@import './variables.css';
+
+:global {
+  body {
+    font-family: 'Roboto', sans-serif;
+  }
+}
