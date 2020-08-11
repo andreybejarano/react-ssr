@@ -96,7 +96,7 @@
     "husky": "^4.0.10",
     "mini-css-extract-plugin": "^0.9.0",
     "morgan": "^1.9.1",
-    "nodemon": "^2.0.2",
+    "nodemon": "^2.0.4",
     "pixrem": "^5.0.0",
     "pleeease-filters": "^4.0.0",
     "postcss": "^7.0.26",
@@ -128,6 +128,6 @@
     "validate-commit": "^3.4.0",
     "webpack": "^4.41.5",
     "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.10.1"
+    "webpack-dev-server": "^3.11.0"
   }
 }
