@@ -2,9 +2,10 @@
 >Starter kit of React with SSR
 
 ## Tecnologies
-- Node.js v12.14.1
-- React v16.12.0
+- Node.js v12.18.3
+- React v16.13.1
 - Express v4.17.1
+- Material UI 4.11.0
 - nvm
 
 ## Install
@@ -13,7 +14,7 @@ $ git clone git@github.com:andreybejarano/react-ssr.git
 
 $ cd react-ssr
 
-## If use nvm for use node version 10.15.0
+## If use nvm for use node version 12.18.3
 $ nvm install
 $ nvm use
 

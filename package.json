@@ -7,7 +7,6 @@
     "build": "NODE_ENV=production webpack --config=webpack/index.js --mode=production",
     "build:dev": "NODE_ENV=development webpack --config=webpack/index.js -w",
     "start:dev": "NODE_ENV=development nodemon src/server/index.js",
-    "build:st": "NODE_ENV=staging webpack --config=webpack/index.js",
     "lint": "eslint --fix .",
     "preinstall": "npx npm-force-resolutions",
     "test": "echo \"Error: no test specified\" && exit 1"
