@@ -6,16 +6,16 @@
     "baseUrl": "./",
     "paths": {
       "Config": [
-        "src/config/index.js"
+        "src/client/config/index.js"
       ],
       "Components/*": [
-        "src/components/*"
+        "src/client/components/*"
       ],
       "Utils/*": [
-        "src/utils/*"
+        "src/client/utils/*"
       ],
       "@/*": [
-        "src/*"
+        "src/client/*"
       ]
     }
   }

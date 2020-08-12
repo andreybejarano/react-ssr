@@ -8,7 +8,6 @@
     "build:dev": "NODE_ENV=development webpack --config=webpack/index.js -w",
     "start:dev": "NODE_ENV=development nodemon src/server/index.js",
     "build:st": "NODE_ENV=staging webpack --config=webpack/index.js",
-    "dev": "NODE_ENV=development webpack-dev-server --config=webpack/index.js --open --mode=development",
     "lint": "eslint --fix .",
     "preinstall": "npx npm-force-resolutions",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -16,6 +15,14 @@
   "resolutions": {
     "dot-prop": "^5.1.1",
     "minimist": "^1.2.3"
+  },
+  "nodemonConfig": {
+    "ignore": [
+      "node_modules"
+    ],
+    "nodeArgs": [
+      "--inspect=5051"
+    ]
   },
   "repository": {
     "type": "git",
@@ -40,6 +47,7 @@
   ],
   "dependencies": {
     "@babel/polyfill": "^7.10.4",
+    "@material-ui/core": "^4.11.0",
     "body-parser": "^1.19.0",
     "classnames": "^2.2.6",
     "css-modules-require-hook": "^4.2.3",
@@ -50,6 +58,7 @@
     "prop-types": "^15.7.2",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-jss": "^10.3.0",
     "react-redux": "^7.2.1",
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",

@@ -5,6 +5,7 @@ class Html extends React.Component {
   render() {
     const {
       children,
+      css,
       scripts,
       state,
       styles
@@ -17,8 +18,8 @@ class Html extends React.Component {
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
           <title>react SSR</title>
           <link rel="icon" type="image/x-icon" href="/statics/images/favicon.ico"></link>
-          <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
           <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900" />
+          <style id="jss-server-side">{css}</style>
           {styles.map(style => <link key={style} rel="stylesheet" href={style} />)}
         </head>
         <body>
