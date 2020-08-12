@@ -77,12 +77,14 @@ module.exports = (_env, argv) => {
         'process.env.version': `"${pkg.version}"`
       }),
       new CleanWebpackPlugin(),
-      new CopyWebpackPlugin([
-        {
-          from: './statics',
-          to: './statics'
-        }
-      ]),
+      new CopyWebpackPlugin({
+        patterns: [
+          {
+            from: './statics',
+            to: './statics'
+          }
+        ]
+      }),
       new MiniCssExtractPlugin({
         filename: 'css/[name].css',
         chunkFilename: 'css/[name].chunk.css'

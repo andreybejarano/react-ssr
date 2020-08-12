@@ -1,4 +1,4 @@
 "hooks": {
-  "commit-msg": "validate-commit-msg",
+  "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
   "pre-commit": "eslint ."
 }
